@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Bebas+Neue&display=swap');
+
+
+body{
+    background: #ffe259;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.main-container{
+    min-width: 100px;
+    min-height: 100px;
+}
+
+
+.main-container > *{
+    text-align: center;
+    margin:auto;
+    
+}
+
+.main-container > h1:first-of-type{
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+.main-image{
+    display: block;
+    margin: auto;
+    display: block;
+    max-width: 200px;
+    margin-top:10px;
+}
+
+.main-container > p:first-of-type{
+    margin-top:20px;
+   max-width: 300px;
+   background-color:white;
+   padding:20px;
+   border-radius: 50px;
+   border-style: dashed;
+   font-family: 'Barlow', sans-serif;
+}
+
