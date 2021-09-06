@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./tasks.js"></script>
 </head>
 <body>
     
     <div class="main-container">
-        <h1>Daniel's Website</h1>
+        <h1>GDSC Task Manager</h1>
         <img class="main-image" src="https://source.unsplash.com/random">
-        <p>Welcome to my website Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta reprehenderit numquam magni aliquam corrupti sint aliquid sed tempora explicabo adipisci repellendus praesentium, ab earum alias quibusdam tempore, quae odit!</p>
+        <p>Welcome to a GDSC lead workshop where you will learn how to create a Task Manager from scratch.</p>
     </div>
 
     <div class="form-container" >
-        <h1>Sign up to my mailing list!</h1>
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <input type="submit" value="Submit">
-        </form>
+        <h1>Create a new task</h1>
+        <label for="todo">Todo:</label>
+        <input type="text" id="todo" name="todo">
+        <input type="button" value="Add task" onclick="createNewTask(document.getElementById('todo').value)">
+    </div>
+
+    <div id="tasks">
+        <div class="task">
+            <input type="button" value="cross" onclick="completeTask(event)"></input>
+            <p>Get Groceries</p>
+            <input type="button" value="delete" onclick="deleteTask(event)"></input>
+        </div>
     </div>
 </body>
 </html>
