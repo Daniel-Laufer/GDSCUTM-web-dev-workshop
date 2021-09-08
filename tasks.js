@@ -3,7 +3,7 @@ function createNewTask(todo) {
   const cross = document.createElement('input')
   cross.value = "Cross"
   cross.type = "button"
-  cross.onclick = () => completeTask
+  cross.onclick = (event) => completeTask(event)
   // Creating text of the task
   const todoElement = document.createElement('p')
   todoElement.innerHTML = todo
@@ -11,7 +11,7 @@ function createNewTask(todo) {
   const deleteButton = document.createElement("input")
   deleteButton.value = "Delete"
   deleteButton.type = "button"
-  deleteButton.onclick = () => deleteTask
+  deleteButton.onclick = (event) => deleteTask(event)
   // Creating the container task
   const containerDiv = document.createElement('div')
   containerDiv.classList.add("task")
